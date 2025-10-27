@@ -1,16 +1,37 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🔐 Pass Reaper (LocalStorage version)
 
-Currently, two official plugins are available:
+Pass Reaper is a simple **React-based Password Manager** that stores user credentials locally in the browser using **localStorage** for more privacy and security.  
+It allows users to add, edit, copy, and delete passwords easily in a clean and responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- React (Vite)
+- Tailwind CSS
+- React Toastify
+- UUID
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🧠 Features
+
+- Add, Edit, and Delete Passwords
+
+- Data stored securely in localStorage
+
+- Copy password with one click
+
+- Beautiful UI with Tailwind CSS
+
+- Toast notifications using React Toastify
+
+- Works fully offline
+
+## Preview
+![screenshot](https://github.com/user-attachments/assets/6d42fc1c-b4e7-4f25-8c5d-be6698be3b4d)
+
+## Live Preview Link 
+https://mr-pass.netlify.app/
+
+If you like it then you can motivate me with a ⭐.
