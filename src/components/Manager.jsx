@@ -20,12 +20,12 @@ function Manager() {
 
   const viewPass = ()=> {
     // alert("working h yaha tk")
-    if(ref.current.src.includes("assets/hidden.png")) {
-      ref.current.src = "src/assets/view.png"
+    if(ref.current.src.includes("/hidden.png")) {
+      ref.current.src = "/view.png"
       passRef.current.type = "text"
     }
     else {
-      ref.current.src = "src/assets/hidden.png"
+      ref.current.src = "/hidden.png"
       passRef.current.type = "password"
     }
   }
@@ -46,7 +46,7 @@ function Manager() {
     theme: "dark",
     // transition: Bounce,
     });
-    // setForm({site:"", username:"", password:""})
+    setForm({site:"", username:"", password:""})
   }}
 
   const handleChange = (e)=>{
@@ -105,7 +105,7 @@ function Manager() {
       // transition={Bounce}
       />
         <div className="fixed top-0 left-0 -z-10 min-h-full w-full bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-size-[20px_20px]"></div>
-          <div className="md:container min-h-[83.6vh] p-5 mx-auto md:px-40 my-5 mt-10 w-full">
+          <div className="lg:container min-h-[83.6vh] p-5 mx-auto lg:px-40 my-5 mt-10 w-full">
             <div className='flex flex-col items-center text-white'>
              <div className='text-3xl font-bold'>
                 <span className='text-purple-700'>&lt;</span>
@@ -119,7 +119,7 @@ function Manager() {
                 <input value={form.username} onChange={handleChange} placeholder='username' type="text" name="username" className='text-white w-full rounded-full px-5 py-2 border border-purple-700' />
                 <div className='w-full relative'>
                   <input ref={passRef} value={form.password} onChange={handleChange} placeholder='Password' type="password" name="password" className='text-white  w-full rounded-full px-5 py-2 border border-purple-700 ' />
-                  <img ref={ref} className='absolute top-2 right-3 invert hover:cursor-pointer' width={25} src="src/assets/hidden.png" alt="" onClick={viewPass} />
+                  <img ref={ref} className='absolute top-2 right-3 invert hover:cursor-pointer' width={25} src="/hidden.png" alt="" onClick={viewPass} />
                 </div>
               </div>
               <button className='flex justify-center items-center gap-2 bg-purple-700 w-fit px-4 py-1 font-bold rounded-full border-2 border-purple-700 text-white hover:bg-purple-800 hover:cursor-pointer'
